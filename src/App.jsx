@@ -14,26 +14,27 @@ import {
   RouterProvider,
   Outlet,
 } from 'react-router-dom';
-import Farmerdash from './components/farmerdash/farmerdash';
+ 
 import Stats from './components/dashboard/stats/Statistics';
-import Farmerstat from './components/farmerdash/statsfarmer/farmstat';
+import Farmerstat from './components/furnidash/statsfarmer/farmstat';
 import Admindash from './components/adminDash/admindash';
 import { color } from 'chart.js/helpers';
 import { IoLogoUsd } from 'react-icons/io';
 import Card from './components/adminDash/card/card';
 import Cards from './components/cards/cards';
 import Table from  './components/adminDash/table/table'
-import Farmprof from './components/farmerdash/farmprof/farmprof';
+import Farmprof from './components/furnidash/farmprof/farmprof';
 import Diysidebar from './components/diydash/diy-sidebar/diysidebar';
 import Diydash from './components/diydash/diydash';
 import Diyvideo from './components/diydash/bodydiy/diyvideo/diyvideo';
 import Windowdiy from './components/diydash/bodydiy/windowdiy/windowdiy';
-import InspirationGallery from './components/farmerdash/InspirationGallery/InspirationGallery';
+import InspirationGallery from './components/furnidash/InspirationGallery/InspirationGallery';
 import Chatbot from './components/Chatbot/Chatbot';
 import CommunityForum from './components/CommunityForum/CommunityForum';
 import ChairPage from './components/Chairpage';
-import Marketplace from './components/farmerdash/marketplace/marketplace';
+import Marketplace from './components/furnidash/marketplace/marketplace';
 import AIDesignSuggestions from './components/AiDesign/AIDesignSuggestions';
+import Furnidash from './components/furnidash/furnidash';
  
  
 
@@ -90,8 +91,8 @@ const router = createBrowserRouter([
     element: <Dashboard />, // Dashboard route
   },
   {
-    path: '/farmerdash',
-    element: <Farmerdash />, // Dashboard route
+    path: '/furnidash',
+    element: <Furnidash />, // Dashboard route
   },
   {
     path: '/stats',
